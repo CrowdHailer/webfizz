@@ -16,7 +16,8 @@ describe AppController do
   behaviour = {
     '1' => '1',
     '2' => '2',
-    '3' => 'Fizz'
+    '3' => 'Fizz',
+    '5' => 'Buzz'
   }
 
   behaviour.each do |submitted, reply|
