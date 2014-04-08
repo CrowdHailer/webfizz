@@ -6,6 +6,8 @@ class AppController < Sinatra::Base
   end
 
   get '/:number' do
-    params[:number]
+    num = params[:number].to_i
+    response = 'Fizz' if num % 3 == 0
+    response || num.to_s
   end
 end
